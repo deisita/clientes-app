@@ -1,0 +1,73 @@
+
+  <form class="form-horizontal" action="index.html" method="post" enctype="multipart/form-data">
+    <div class="form-group  col-sm-12">
+      <div class="form-group col-sm-6">
+         <label for="tipo_documento" class="col-sm-5 control-label">Tipo Documento</label>
+         <div class="col-sm-7">
+           <select class="form-control" name="tipo_documento" id="tipo_documento">
+           </select>
+         </div>
+      </div>
+      <div class="form-group col-sm-6">
+         <label for="documento" class="col-sm-5 control-label">Numero de Documento*</label>
+         <div class="col-sm-7">
+           <input type="text" class="form-control" name="documento" id="documento" size="30" placeholder="Documento" value="" required="" aria-required="true">
+         </div>
+      </div>
+	</div>
+      <div class="form-group col-sm-6">
+         <label for="primerNombre" class="col-sm-5 control-label">Primer Nombre</label>
+         <div class="col-sm-7">
+           <input type="text" class="form-control" name="primerNombre" id="primerNombre" size="30" value="" required="" aria-required="true">
+         </div>
+      </div>
+	  <div class="form-group col-sm-6">
+         <label for="segundoNombre" class="col-sm-5 control-label">Segundo Nombre</label>
+         <div class="col-sm-7">
+           <input type="text" class="form-control" name="segundoNombre" id="segundoNombre" size="30" value="" required="" aria-required="true">
+         </div>
+      </div>
+      <div class="form-group col-sm-6">
+         <label for="Primerapellido" class="col-sm-5 control-label">Primer apellido</label>
+         <div class="col-sm-7">
+           <input type="text" class="form-control" name="Primerapellido" id="Primerapellido" size="30" value="" required="" aria-required="true">
+        </div>
+      </div>
+      <div class="form-group col-sm-6">
+         <label for="segundoapellido" class="col-sm-5 control-label">segundo apellido</label>
+         <div class="col-sm-7">
+           <input type="text" class="form-control" name="segundoapellido" id="segundoapellido" size="30" value="" required="" aria-required="true">
+        </div>
+      </div>
+    <div class="form-group col-sm-6">
+      <label for="celular" class="col-sm-5 control-label">celular</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" name="celular" id="celular" size="30" value="" required="" aria-required="true">
+      </div>
+	</div>
+
+	  <div class="form-group col-sm-6">
+        <label for="jform_email1" class="col-sm-5 control-label">Email*</label>
+        <div class="col-sm-7">
+          <input type="email" class="form-control validate-email" name="email1" id="jform_email1" size="30" placeholder="Email" value="" required="" aria-required="true">
+        </div>
+      </div>
+
+      <div class="form-group col-sm-6">
+        <label for="plan" class="col-sm-5 control-label">Plan de preferencia</label>
+        <div class="col-sm-7">
+          <select class="form-control" name="plan" id="plan">
+
+          </select>
+        </div>
+      </div>
+
+  </form>
+  <div class="card">
+    <div class="card-header">
+      Listado Clientes
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let Clientes of listacliente">{{Clientes}}</li>
+    </ul>
+  </div>
